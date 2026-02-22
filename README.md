@@ -125,7 +125,7 @@ cd webvm
 ### 2. Download the Debian mini Ext2 image
 
 Run the following command to download the Debian mini Ext2 image:
-
+// tải file debian_mini_20230519_5022088024.ext2 về , file này sau này để tạo linux để chạy trên browser
 ```sh
 wget "https://github.com/leaningtech/webvm/releases/download/ext2_image/debian_mini_20230519_5022088024.ext2"
 ```
@@ -133,7 +133,9 @@ wget "https://github.com/leaningtech/webvm/releases/download/ext2_image/debian_m
 (*You can also build your own disk image by selecting the **"Upload GitHub release"** workflow option*)
 
 ### 3. Update the configuration file
-
+   // nếu muốn dùng linux giao diện thì cấu hình vite.config.js , là file config_public_alpine.js
+   // lúc này không cần tải file , lúc chạy sẽ tự lấy file alpine về thông qua websocket
+   // và ko cần cấu hình diskimage
 	Edit `config_public_terminal.js` to reference your local disk image:
 
 - Replace: 
